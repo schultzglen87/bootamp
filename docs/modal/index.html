@@ -3,27 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="tooltips.amp.html">
-  <meta name="description" content="Documentation and examples for adding custom BootAMP tooltips with CSS">
+  <link rel="canonical" href="/bootamp/docs/modal">
+  <meta name="description"
+    content="Use BootAMP to add dialogs to your site for lightboxes, user notifications, or completely custom content.">
   <meta name="keywords" content="Framework for building responsive, Bootstrap alternative, Browsers Compatibility">
-  <title>Tooltips | BootAMP</title>
+  <title>Modal | BootAMP</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="amp-google-client-id-api" content="googleanalytics">
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tooltips | BootAMP" />
-  <meta property="og:description" content="Documentation and examples for adding custom BootAMP tooltips with CSS" />
+  <meta property="og:title" content="Modal | BootAMP" />
+  <meta property="og:description"
+    content="Use BootAMP to add dialogs to your site for lightboxes, user notifications, or completely custom content." />
   <meta property="og:image" content="https://jssaints.github.io/bootamp/img/bootstrap-amp/logo.png" />
   <meta property="og:site_name" content="BootAMP" />
-  <meta property="og:url" content="https://jssaints.github.io/bootamp/tooltips.amp.html/" />
+  <meta property="og:url" content="https://jssaints.github.io/bootamp/modal.amp.html/" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="BootAMP" />
-  <meta name="twitter:title" content="Tooltips | BootAMP" />
-  <meta name="twitter:description" content="Documentation and examples for adding custom BootAMP tooltips with CSS" />
+  <meta name="twitter:title" content="Modal | BootAMP" />
+  <meta name="twitter:description"
+    content="Use BootAMP to add dialogs to your site for lightboxes, user notifications, or completely custom content." />
   <meta name="twitter:image" content="https://jssaints.github.io/bootamp/img/bootstrap-amp/logo.png" />
-  <meta name="twitter:url" content="https://jssaints.github.io/bootamp/tooltips.amp.html" />
+  <meta name="twitter:url" content="https://jssaints.github.io/bootamp/modal.amp.html" />
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
-  <link rel="shortcut icon" href="../img/bootstrap-amp/favicon.ico">
+  <link rel="shortcut icon" href="../../img/bootstrap-amp/favicon.ico">
 
 
   <style amp-boilerplate="">
@@ -103,6 +106,7 @@
   <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <script custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" async=""></script>
   <script custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" async=""></script>
+  <script custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js" async=""></script>
 
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
@@ -120,12 +124,12 @@
         "@type": "ListItem",
         "position": 2,
         "name": "Documentation",
-        "item": "https://jssaints.github.io/bootamp/introduction.amp.html"
+        "item": "https://jssaints.github.io/bootamp/docs/introduction"
       },{
         "@type": "ListItem",
         "position": 3,
-        "name": "Tooltips",
-        "item": "https://jssaints.github.io/bootamp/docs/tooltips.amp.html"
+        "name": "Modal",
+        "item": "https://jssaints.github.io/bootamp/docs/modal"
       }]
     }
     </script>
@@ -2331,7 +2335,7 @@
     <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2">
       &#8801;</div>
     <a href="/bootamp/" class="mx-auto text-decoration-none font-500">
-      <amp-img src="../img/bootstrap-amp/logo.png" width="40" height="40" layout="fixed" alt="Bootstrap Logo"
+      <amp-img src="../../img/bootstrap-amp/logo.png" width="40" height="40" layout="fixed" alt="Bootstrap Logo"
         class="align-bottom"></amp-img>
       BootAMP
     </a>
@@ -2341,7 +2345,7 @@
           <a href="https://github.com/jssaints/bootamp" target="_blank" class="text-decoration-none block"><i class="fab fa-github"></i> GitHub</a>
         </li>
         <li class="ampstart-nav-item">
-          <a href="introduction.amp.html" class="text-decoration-none block">Documentation</a>
+          <a href="/bootamp/docs/introduction" class="text-decoration-none block">Documentation</a>
         </li>
         <li class="ampstart-nav-item">
           <a href="/bootamp/comparison" class="text-decoration-none block">Comparison</a>
@@ -2360,7 +2364,7 @@
     </div>
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
-        <li class="ampstart-nav-item"><a href="introduction.amp.html">Documentation</a></li>
+        <li class="ampstart-nav-item"><a href="/bootamp/docs/introduction">Documentation</a></li>
         <li class="ampstart-nav-item"><a href="/bootamp/comparison">Comparison</a></li>
         <li class="ampstart-nav-item"><a href="/bootamp/migration">Migration</a></li>
         <li class="ampstart-nav-item"><a href="https://github.com/jssaints/bootamp" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
@@ -2374,77 +2378,71 @@
   <!-- End Header -->
   <div class="max-width-4 py4">
     <div class="flex flex-wrap">
-      <div class="col-12 md-col-2 px2 border-right">
+      <div class="col-12 md-col-2 px2 border-right relative">
         <div class="sidebar-menu">
           <ul class="list-reset">
             <li class="mb1">
               <strong>Getting Started</strong>
             </li>
             <li class="mb1">
-              <a href="introduction.amp.html" class="text-decoration-none pr2">Introduction</a>
+              <a href="/bootamp/docs/introduction" class="text-decoration-none pr2">Introduction</a>
             </li>
             <li class="mb1">
-              <a href="typography.amp.html" class="text-decoration-none pr2">Typography</a>
+              <a href="/bootamp/docs/typography" class="text-decoration-none pr2">Typography</a>
             </li>
             <li class="mb1">
-              <a href="buttons.amp.html" class="text-decoration-none pr2">Buttons</a>
+              <a href="/bootamp/docs/buttons" class="text-decoration-none pr2">Buttons</a>
             </li>
             <li class="mb1">
-              <a href="card.amp.html" class="text-decoration-none pr2">Card</a>
+              <a href="/bootamp/docs/card" class="text-decoration-none pr2">Card</a>
             </li>
             <li class="mb1">
-              <a href="carousel.amp.html" class="text-decoration-none pr2">Carousel</a>
+              <a href="/bootamp/docs/carousel" class="text-decoration-none pr2">Carousel</a>
             </li>
             <li class="mb1">
-              <a href="collapse.amp.html" class="text-decoration-none pr2">Collapse</a>
+              <a href="/bootamp/docs/collapse" class="text-decoration-none pr2">Collapse</a>
             </li>
             <li class="mb1">
-              <a href="dropdown.amp.html" class="text-decoration-none pr2">Dropdown</a>
+              <a href="/bootamp/docs/dropdown" class="text-decoration-none pr2">Dropdown</a>
             </li>
             <li class="mb1">
-              <a href="form.amp.html" class="text-decoration-none pr2">Forms</a>
+              <a href="/bootamp/docs/form" class="text-decoration-none pr2">Forms</a>
             </li>
             <li class="mb1">
-              <a href="modal.amp.html" class="text-decoration-none pr2">Modal</a>
+              <a href="/bootamp/docs/modal" class="text-decoration-none pr2">Modal</a>
             </li>
             <li class="mb1">
-              <a href="nav.amp.html" class="text-decoration-none pr2">Nav</a>
+              <a href="/bootamp/docs/nav" class="text-decoration-none pr2">Nav</a>
             </li>
             <li class="mb1">
-              <a href="navbar.amp.html" class="text-decoration-none pr2">Navbar</a>
+              <a href="/bootamp/docs/navbar" class="text-decoration-none pr2">Navbar</a>
             </li>
             <li class="mb1">
-              <a href="tooltips.amp.html" class="text-decoration-none pr2">Tooltips</a>
+              <a href="/bootamp/docs/tooltips" class="text-decoration-none pr2">Tooltips</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="col-1"></div>
-      <div class="col-12 md-col-8 px2">
-        <div class="py2">
-          <h2 class="mb2">Tooltips</h2>
-          <button type="button" class="ampstart-btn" title="Tooltip">
-            Tooltip
-          </button>
-          <pre><code class="hljs">
-&lt;button&nbsp;type=<span class="hljs-string">"button"</span>&nbsp;<span class="hljs-keyword">class</span>=<span class="hljs-string">"ampstart-btn"</span>&nbsp;title=<span class="hljs-string">"Tooltip"</span>&gt;
-&nbsp;&nbsp;Tooltip
-&lt;/button&gt;
-            </code></pre>
-        </div>
-        <div class="py2">
-          <h3>Disabled elements</h3>
-          <span title="Disabled tooltip">
-            <button type="button" class="ampstart-btn" disabled="">Disabled button</button>
-          </span>
-          <pre><code class="hljs">
-&lt;span&nbsp;title=<span class="hljs-string">"Disabled tooltip"</span>&gt;
-&nbsp;&nbsp;&lt;button&nbsp;type=<span class="hljs-string">"button"</span>&nbsp;<span class="hljs-keyword">class</span>=<span class="hljs-string">"ampstart-btn"</span>&nbsp;disabled&gt;Disabled button&lt;/button&gt;
-&lt;/span&gt;
-                  </code></pre>
-        </div>
 
+      <div class="col-1"></div>
+      <div class="col-12 md-col-8 px2 py2">
+        <h2 class="mb3">Modal</h2>
+        <amp-lightbox id="my-lightbox" layout="nodisplay">
+          <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+            <h1>Hello World!</h1>
+          </div>
+        </amp-lightbox>
+        <button class="ampstart-btn" on="tap:my-lightbox">Open Modal</button>
+        <pre><code data-lang="html" class="hljs cs">
+&lt;amp-lightbox&nbsp;id=<span class="hljs-string">"my-lightbox"</span>&nbsp;layout=<span class="hljs-string">"nodisplay"</span>&gt;
+&nbsp;&nbsp;&lt;div&nbsp;<span class="hljs-keyword">class</span>=<span class="hljs-string">"lightbox"</span>&nbsp;on=<span class="hljs-string">"tap:my-lightbox.close"</span>&nbsp;role=<span class="hljs-string">"button"</span>&nbsp;tabindex=<span class="hljs-string">"0"</span>&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&lt;/amp-lightbox&gt;
+&lt;button&nbsp;<span class="hljs-keyword">class</span>=<span class="hljs-string">"ampstart-btn"</span>&nbsp;on=<span class="hljs-string">"tap:my-lightbox"</span>&gt;Open lightbox&lt;/button&gt;
+              </code></pre>
       </div>
+
     </div>
   </div>
   <!-- Start Footer -->
@@ -2457,7 +2455,7 @@
               <a href="https://github.com/jssaints/bootamp" target="_blank" class="text-decoration-none">GitHub</a>
             </li>
             <li class="mr2">
-              <a href="introduction.amp.html" class="text-decoration-none">Documentation</a>
+              <a href="/bootamp/docs/introduction" class="text-decoration-none">Documentation</a>
             </li>
             <li class="mr2">
               <a href="/bootamp/comparison" class="text-decoration-none">Comparison</a>
